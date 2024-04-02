@@ -7,99 +7,124 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        display: flex;
+        background-color: #f9f4ef;
+        justify-content: center;
       }
-    </style>
-    <style>
       .banner-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
       }
-    </style>
-    <style>
       .thumbnail {
         width: 48px;
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
         }
-        body {
-        background-color: #f9f4ef;
-      }
-
       .name {
         color: #020826;
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-family: 'Helvetica';
+        font-weight: bolder;
       }
-
       .social-icons a {
         color: #020826;
         text-decoration: none;
+        font-size: 14px;
+        font-family: 'Helvetica';
+        font-weight: bold;
       }
-
       .link {
-        background-color: #716040;
+        background-color: #eaddcf;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-size: 14px;
+        font-family: 'Helvetica';
+        font-weight: bold;
       }
-
       .link a {
         color: #020826;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 600px;
+        flex-grow: 1;
+      }
+      .banner {
+      display: flex;
+      justify-content: center;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
       }
     </style>
   </head>
 <body>
-  <div class="banner">
-    <img src="/thumbnails/panda.jpg" alt="Profile Picture" class="banner-image">
+  <div class="items">
+    <div class="banner">
+      <img src="/thumbnails/panda.jpg" alt="Profile Picture" class="banner-image">
+    </div>
+
+    <div class="name">
+      David Gama
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/dgamac" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://twitter.com/davidxgama" target="_blank">
+        Twitter
+      </a>
+    </div>
+
+    <div class="link">
+      <img
+        src="/thumbnails/axolotl.jpg" class="thumbnail">
+
+      <a target="_blank" href="https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/AxO.pdf">Axólotl
+        — Julio Cortazar</a>
+    </div>
+
+    <div class="link">
+      <img src="/thumbnails/surf.jpg" class="thumbnail">
+
+      <a target="_blank"
+        href="https://www.newyorker.com/magazine/1992/08/24/playing-docs-games-part-one">Playing Docs Games Pt. 1 — William Finnegan</a>
+    </div>
+
+    <div class="link">
+      <img
+        src="/thumbnails/maze.jpg" class="thumbnail">
+
+      <a target="_blank" href="https://ciudadseva.com/texto/tema-del-traidor-y-del-heroe/">Tema del traidor y del héroe — Jorge Luis Borges</a>
+    </div>
+
+    <div class="link">
+      <img
+        src="/thumbnails/tarot.jpg" class="thumbnail">
+
+      <a target="_blank" href="https://purple.fr/magazine/the-mexico-issue-36-f-w-2021/alejandro-jodorowsky-2/">Jodorowsky, Purple Magazine — Donatien Grau</a>
+    </div>
+
+    <div class="link">
+      <img
+        src="/thumbnails/mountaneer.jpg" class="thumbnail">
+
+      <a target="_blank" href="https://lithub.com/rebecca-solnit-slow-change-can-be-radical-change/">Slow Change can be Radical Change — Rebecca Solnit</a>
+    </div>
+    <!-- Etc, for as many links as you want -->
   </div>
-
-  <div class="name">
-    David Gama
-  </div>
-
-  <div class="social-icons">
-    <a href="https://github.com/dgamac" target="_blank">
-      GitHub
-    </a>
-
-    <a href="https://twitter.com/davidxgama" target="_blank">
-      Twitter
-    </a>
-  </div>
-
-  <div class="link">
-    <img
-      src="/thumbnails/axolotl.jpg" class="thumbnail">
-
-    <a target="_blank" href="https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/AxO.pdf">Axolotl
-      — Julio Cortazar</a>
-  </div>
-
-  <div class="link">
-    <img src="/thumbnails/surf.jpg" class="thumbnail">
-
-    <a target="_blank"
-      href="https://www.newyorker.com/magazine/1992/08/24/playing-docs-games-part-one">Playing Docs Games Pt. 1 — William Finnegan</a>
-  </div>
-
-  <div class="link">
-    <img
-      src="/thumbnails/maze.jpg" class="thumbnail">
-
-    <a target="_blank" href="https://ciudadseva.com/texto/tema-del-traidor-y-del-heroe/">Tema del traidor y del héroe — Jorge Luis Borges</a>
-  </div>
-
-  <div class="link">
-    <img
-      src="/thumbnails/tarot.jpg" class="thumbnail">
-
-    <a target="_blank" href="https://purple.fr/magazine/the-mexico-issue-36-f-w-2021/alejandro-jodorowsky-2/">Jodorowsky, Purple Magazine — Donatien Grau</a>
-  </div>
-
-  <div class="link">
-    <img
-      src="/thumbnails/mountaneer.jpg" class="thumbnail">
-
-    <a target="_blank" href="https://lithub.com/rebecca-solnit-slow-change-can-be-radical-change/">Slow Change can be Radical Change — Rebecca Solnit</a>
-  </div>
-  <!-- Etc, for as many links as you want -->
 </body>
